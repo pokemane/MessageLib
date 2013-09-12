@@ -1,0 +1,14 @@
+0.1.0 Alpha -- 12 September 2013
+	-Initial project creation
+	
+	-ADDED:
+		-Enqueue
+		-Dequeue
+		-Execute --MUST be overridden in child classes.  If there is nothing to execute, just make an empty method or use the Invoke Parent Node method.
+		-Obtain/Release Queue
+		-All sorts of "standard" Accessor methods.  Feel free to add to these within child classes.  These just provide some basic functionality as an example.
+	
+	-NOTES:
+		-Queue manipulation is done with Dynamic Dispatch, so you can make children of the Message class use the parent's methods (e.g. Enqueue and Execute)
+		-This project has NO dependencies outside the standard VI library
+		-See "LV OOP Example" project for examples of this type of messaging system.
