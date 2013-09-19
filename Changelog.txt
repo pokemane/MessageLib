@@ -1,3 +1,16 @@
+0.1.1 Alpha -- 19 September 2013
+	-Compatibility for class/object references, provides workaround for "pass by value vs function" discrepancy LabVIEW has with other OOP languages
+	
+	-ADDED:
+		-LabVIEW Object terminal in Message.Execute() method.  Must be downcast in child overrides.
+		-Ability for Enqueue/Dequeue/Release Queue to take specific message objects of type TAS_Message
+			-Not sure if explicitly needed, kind of got lost in my "figure things out" flurry.  It doesn't hurt at all.
+		
+	-NOTES:
+		-Comments coming in later commit
+		-References look messy but they're great.
+
+
 0.1.0 Alpha -- 12 September 2013
 	-Initial project creation
 	
